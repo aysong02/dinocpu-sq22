@@ -166,7 +166,6 @@ The ALU control takes four inputs:
 * `funct7` and `funct3`, which come from the instruction
 
 You can ignore the `aluop` and `itype` for now.
-Assume both are always `0`.
 
 Given these inputs, you must generate the correct output on the operation wire.
 The template code from `src/main/scala/components/alucontrol.scala` is shown below.
@@ -176,7 +175,7 @@ You will fill in where it says *Your code goes here*.
 /**
  * The ALU control unit
  *
- * Input: aluop    	add, if true, add no matter what the other bits are
+ * Input: aluop    	0 for ld/st, 1 for R-type
  * Input: itype    	immediate, if true, ignore funct7 when computing the operation
  * Input: funct7   	the most significant bits of the instruction
  * Input: funct3  	the middle three bits of the instruction (12-14)
@@ -522,7 +521,7 @@ Now, test them to make sure that they do!
 You may need to update the wires in your CPU design to get all of the R-type instructions to work.
 There are a couple of tricky ones that may cause you to re-think your design.
 
-* `add0` tests to make sure you don't overwrite register 0 (it should always be 0 in RISC-V).
+* `add0` tests to make sure you don't overwrite register 0 (it should always be 0 in RISC-V). (you will need to modify the wen input in the register file if writereg is 0)
 * The `sub` and `sra` instructions will stress corner cases in your ALU control unit, but you already passed those tests so it should work!
 * The signed and unsigned versions of instructions are also tricky.
 
