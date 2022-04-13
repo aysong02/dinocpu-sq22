@@ -369,6 +369,8 @@ This creates a wire from the PC to the instruction memory.
 You should fill in the other wires (and instruction subsets) that are required to implement the `add` RISC-V instruction.
 You can find more details in the [Single Cycle CPU Design Module](https://jlpteaching.github.io/ECS154B/modules/processor%20architecture/single-cycle/).
 
+**Note**: due to some issues with chisel, you may not be able to directly connect pc + 4 to the pc input. If you run into issues with this part, create a new wire with input pc + 4, then connect that to the pc input
+
 **Important**: You will not need to modify anything below the `Object to make it easier to print information about the CPU` line.
 This code should be kept the same for everyone.
 
