@@ -10,7 +10,7 @@ Originally from ECS 154B Lab 1, Winter 2019.
 
 Modified for ECS 154B Lab 1, Spring 2022.
 
-**Due on 4/17 11:59 PM**: See [Submission](#submission) for details
+**Due on 4/18 11:59 PM**: See [Submission](#submission) for details
 
 ## Table of Contents
 
