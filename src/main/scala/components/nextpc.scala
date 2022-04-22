@@ -10,8 +10,8 @@ import chisel3._
  * Input: branch         true if executing a branch instruction
  * Input: jal            true if executing a jal
  * Input: jalr           true if executing a jalr
- * Input: inputx         first input
- * Input: inputy         second input
+ * Input: eqf            true if inputx == inputy in ALU
+ * Input: ltf            true if inputx < input y in ALU
  * Input: funct3         the funct3 from the instruction
  * Input: pc             the *current* program counter for this instruction
  * Input: imm            the sign-extended immediate
