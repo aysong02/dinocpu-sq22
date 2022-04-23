@@ -124,7 +124,7 @@ Then, you will wire all of the components together.
 You will also implement the [control unit](#control-unit-overview), NextPC unit and update the alu control unit.
 
 **Important Notice:**
-In order to get familiar with debugging your design using single stepper, ***we strongly encourage you to watch the tutorial video*** we have provided in the link below. You may have watched it while working on assignment1. As mentioned before, the videos were originally made for spring quarter 2020 (sq20). Just in case you wanted to use any command or text from these videos which contains 'sq20', you just need to convert it to 'wq21' to be applicable to your materials for the current quarter.
+In order to get familiar with debugging your design using single stepper, ***we strongly encourage you to watch the tutorial video*** we have provided in the link below. You may have watched it while working on assignment1. As mentioned before, the videos were originally made for spring quarter 2020 (sq20). Just in case you wanted to use any command or text from these videos which contains 'sq20', you just need to convert it to 'sq22' to be applicable to your materials for the current quarter.
 
 [DinoCPU - Debugging your implementation](https://video.ucdavis.edu/playlist/dedicated/0_8bwr1nkj/0_kv1v647d)
 
@@ -789,7 +789,7 @@ We have provided four applications for you.
 If you have passed all of the above tests, your CPU should execute these applications with no issues!
 If you do not pass a test, you may need to dig into the debug output of the test.
 
-**Important Note:** We strongly encourage you to use [single stepper](../documentation/single-stepping.md) to test your design for full applications. It will let you step through the execution one cycle at a time and print information as you go. Details on how to use the single stepper can be found in the [documentation](../documentation/single-stepping.md). You can also watch the video we have provided in the link below to learn how to debug using single stepper. As mentioned earlier, the videos were originally made for spring quarter 2020 (sq20). Just in case you wanted to use any command or text from these videos which contains 'sq20', you just need to convert it to 'wq21' to be applicable to your materials for the current quarter.
+**Important Note:** We strongly encourage you to use [single stepper](../documentation/single-stepping.md) to test your design for full applications. It will let you step through the execution one cycle at a time and print information as you go. Details on how to use the single stepper can be found in the [documentation](../documentation/single-stepping.md). You can also watch the video we have provided in the link below to learn how to debug using single stepper. As mentioned earlier, the videos were originally made for spring quarter 2020 (sq20). Just in case you wanted to use any command or text from these videos which contains 'sq20', you just need to convert it to 'sq22' to be applicable to your materials for the current quarter.
 
 [DinoCPU - Debugging your implementation](https://video.ucdavis.edu/playlist/dedicated/0_8bwr1nkj/0_kv1v647d)
 
