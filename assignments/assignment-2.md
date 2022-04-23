@@ -1,6 +1,6 @@
 ---
 Authors: Jason Lowe-Power, Filipe Eduardo Borges
-Editor: Justin Perona, Julian Angeles, Maryam Babaie, Christopher Nitta
+Editor: Justin Perona, Julian Angeles, Maryam Babaie, Christopher Nitta, Andrew Song
 Title: DINO CPU Assignment 2
 ---
 
@@ -81,9 +81,8 @@ If you want to use your solution from lab1 as a starting point, you can merge yo
 If you want to start over and use the provided solution, you can do the following (see [how to update your code](../documentation/updating-from-git.md) for more details):
 
 ```
-git clone https://github.com/UCDClassNitta/dinocpu-sq21
-cd dinocpu-sq21
-git merge origin/lab1-solution
+git clone https://github.com/aysong02/dinocpu-sq22
+cd dinocpu-sq22
 ```
 
 ## How this assignment is written
