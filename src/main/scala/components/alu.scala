@@ -22,6 +22,7 @@ class ALU extends Module {
     val result    = Output(UInt(32.W))
     val eqf       = Output(Bool())
     val ltf       = Output(Bool())
+    val ltuf      = Output(Bool())
   })
 
   when (io.operation === "b0111".U) { // and
@@ -72,7 +73,8 @@ class ALU extends Module {
   .otherwise {
     io.result := 0.U // should be invalid
   }
-  val compsigned = io.operation === "b0110".U || io.operation === "b0111".U || io.operation === "b1001".U
-  io.eqf := io.inputx === io.inputy
-  io.ltf := Mux(compsigned, io.inputx.asSInt < io.inputy.asSInt, io.inputx < io.inputy)
+  
+  io.eqf  := io.inputx === io.inputy
+  io.ltf  := io.inputx.asSInt < io.inputy.asSInt
+  io.ltuf := io.inputx < io.inputy
 }
