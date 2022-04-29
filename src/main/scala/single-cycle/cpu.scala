@@ -60,7 +60,7 @@ class SingleCycleCPU(implicit val conf: CPUConfig) extends BaseCPU {
   alu.io.inputx := registers.io.readdata1
   alu.io.inputy := registers.io.readdata2
 
-  nextpc.io.pc := pc
+  nextpc.io.pc_or_x := pc
   pc := nextpc.io.nextpc
 }
 
