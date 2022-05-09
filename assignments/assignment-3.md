@@ -204,6 +204,13 @@ id_ex_ctrl.io.in.ex_ctrl.aluop := control.io.aluop
 
 Specifically in `id_ex_ctrl.io.in.ex_ctrl.aluop` you have to specify `ex_ctrl.aluop` since you are are getting a signal out of the `ex_ctrl` part of the `IDEXControl` bundle.
 
+**Important:** When access the pipelines registers for signals, there is a little bit of extra to make your code work. In the code above, you use `io.in` to put in data to the pipeline registers. To access the data, use `io.data` See example below:
+
+```scala
+id_ex_ctrl.io.in.ex_ctrl.aluop := control.io.aluop
+aluControl.io.aluop := id_ex_ctrl.io.data.ex_ctrl.aluop
+```
+
 This pipeline register/bundle isn't complete.
 It's missing *a lot* of important signals, which you'll need to add.
 
