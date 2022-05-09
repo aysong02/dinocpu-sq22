@@ -27,16 +27,22 @@ class ALUControl extends Module {
   })
 
   io.operation := "b1111".U
+  
+  when (io.aluop){
 
-  // Your code goes here
-  switch (io.funct3) {
-    is ("b000".U) { io.operation := Mux( !io.funct7(5), "b0110".U, "b0100".U) }
-    is ("b001".U) { io.operation := "b1001".U }
-    is ("b010".U) { io.operation := "b1000".U }
-    is ("b011".U) { io.operation := "b0001".U }
-    is ("b100".U) { io.operation := "b0000".U }
-    is ("b101".U) { io.operation := Mux(io.funct7(5), "b0011".U, "b0010".U) }
-    is ("b110".U) { io.operation := "b0101".U }
-    is ("b111".U) { io.operation := "b0111".U }
+    // Your code goes here
+    switch (io.funct3) {
+      is ("b000".U) { io.operation := Mux( !io.funct7(5) || io.itype, "b0110".U, "b0100".U) }
+      is ("b001".U) { io.operation := "b1001".U }
+      is ("b010".U) { io.operation := "b1000".U }
+      is ("b011".U) { io.operation := "b0001".U }
+      is ("b100".U) { io.operation := "b0000".U }
+      is ("b101".U) { io.operation := Mux(io.funct7(5), "b0011".U, "b0010".U) }
+      is ("b110".U) { io.operation := "b0101".U }
+      is ("b111".U) { io.operation := "b0111".U }
+    }
+  }
+  .otherwise{
+    io.operation := "b0110".U
   }
 }
