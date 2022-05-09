@@ -10,11 +10,11 @@ Originally from ECS 154B Lab 3, Winter 2019.
 
 Modified for ECS 154B Project 3, Spring 2022.
 
-**Part 3.1 Due on 05/10/2021 at 9PM.**
+**Part 3.1 Due on 05/18/2021 at 11:59 PM.**
 
 See [End of Part 3.1](#end-of-part-31) for details on turning in project 3.1.
 
-**Part 3.2 Due on 05/17/2021 at 9PM**
+**Part 3.2 Due on 05/21/2021 at 11:59PM**
 
 See [Grading](#grading) for details on turning in project 3.2.
 
