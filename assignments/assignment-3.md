@@ -14,7 +14,7 @@ Modified for ECS 154B Project 3, Spring 2022.
 
 See [End of Part 3.1](#end-of-part-31) for details on turning in project 3.1.
 
-**Part 3.2 Due on 05/21/2021 at 11:59PM**
+**Part 3.2 Due on 05/22/2021 at 11:59PM**
 
 See [Grading](#grading) for details on turning in project 3.2.
 
