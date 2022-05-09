@@ -12,9 +12,9 @@ import chisel3._
  * Input: jalr           true if executing a jalr
  * Input: eqf            true if inputx == inputy in ALU
  * Input: ltf            true if inputx < input y in ALU signed
- * Input: ltf            true if inputx < input y in ALU unsigned
+ * Input: ltuf           true if inputx < input y in ALU unsigned
  * Input: funct3         the funct3 from the instruction
- * Input: pc             the *current* program counter for this instruction
+ * Input: pc_or_x        the *current* program counter for this instruction or register input
  * Input: imm            the sign-extended immediate
  *
  * Output: nextpc        the address of the next instruction
