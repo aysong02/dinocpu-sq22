@@ -287,7 +287,7 @@ Failure to adhere to the instructions will result in a loss of points.
 
 ## Code portion
 
-You will upload the file that you changed to Gradescope on the [Project 3.1]() assignment.
+You will upload the file that you changed to Gradescope on the [Project 3.1](https://www.gradescope.com/courses/382794/assignments/2054311/review_grades) assignment.
 
 - `src/main/scala/pipelined/cpu.scala`
 
@@ -422,7 +422,7 @@ Failure to adhere to the instructions will result in a loss of points.
 
 ## Code portion
 
-You will upload the three files that you changed to Gradescope on the [Project 3.2]() assignment.
+You will upload the three files that you changed to Gradescope on the [Project 3.2](https://www.gradescope.com/courses/382794/assignments/2054328/) assignment.
 
 - `src/main/scala/components/forwarding.scala`
 - `src/main/scala/components/hazard.scala`
