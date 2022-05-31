@@ -285,6 +285,17 @@ As explained in the [previous sections](#pipelined-cpu-design), we have a single
 3. In case of a branch instruction at the execute stage, the `taken` in the *EX/MEM pipereg*, should be used as a signal to show whether the prediction by the branch predictor has been correct or not, rather than the actual outcome of the branch calculated by the nextpc module which is what you did in the assignment 3. The piece of logic you put in the red box, should handle this. So, pay attention that you should not directly connect the output `taken` of the nextpc module to the `taken` in the *EX/MEM pipereg*, otherwise your hazard-bp unit will not work properly.
 4. You can consider the signals entered to the left side of the red box as required inputs to implement the logic, and the signals came out of the right side of the box as the outputs. These signals are sufficient to fully implement the logic and cover all the corner cases.
 
+##**5/31 Revision Extra Notes**
+1. When changing the hazard unit, be careful of your when/elsewhen ordering. You should be checking for a branch flush(exmem_taken), then load hazard, then branch prediction, then follow the default pc + 4 behavior. 
+2. The BP CPU Logic unit is not a module provided. It is code made from the hints above. 
+3. When writing the code for the BP CPU Logic, make sure to put it in the following code block in `cpu-bp.scala`. Putting it elsewhere may cause you to fail the tests
+```scala
+  // ************** Logic to drive proper taken while using a branch predictor **************//
+
+
+  // ************** End of logic to drive proper taken while using a branch predictor **************//
+```
+
 ## Testing
 
 You can use each of the following commands to test your implementation for pipelined-bp CPU.
